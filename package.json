@@ -17,7 +17,7 @@
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "estart": "electron .",
-    "package": "react-app-rewired build && electron-packager . LiveTV --out ./dist/ --electron-version=3.0.4 --ignore=\"(node_modules|dist)\""
+    "package": "react-app-rewired build && rimraf ./dist/ && electron-packager . LiveTV --out ./dist/ --electron-version=3.0.4 --ignore=\"(node_modules|dist)\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +38,7 @@
     "electron": "^5.0.2",
     "electron-packager": "^13.1.1",
     "react-app-rewire-less": "^2.1.3",
-    "react-app-rewired": "2.0.2-next.0"
+    "react-app-rewired": "2.0.2-next.0",
+    "rimraf": "^2.6.3"
   }
 }
