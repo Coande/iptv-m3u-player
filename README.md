@@ -15,6 +15,7 @@
 >以上
 >
 >视频演示: [YouTube](https://youtu.be/BhuYB4l3NUY)
+>
 
 
 **在原来基础上修改了：**
@@ -22,6 +23,16 @@
 - 宽高改为自适应
 - 弹出菜单时保持播放
 - 打包脚本调整
+
+
+**下载：**
+
+[LiveTV-win32-ia32.zip](https://github.com/Coande/iptv-m3u-player/releases/download/v1.0.1/LiveTV-win32-ia32.zip)
+
+[LiveTV-win32-x64.zip](https://github.com/Coande/iptv-m3u-player/releases/download/v1.0.1/LiveTV-win32-x64.zip)
+
+[LiveTV-darwin-x64.zip](https://github.com/Coande/iptv-m3u-player/releases/download/v1.0.1/LiveTV-darwin-x64.zip)
+
 
 **参加开发（摸索的）：**
 
