@@ -11,10 +11,10 @@ function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     show: false,
-    width: 600,
-    height: 350,
-    resizable: false,
-    maximizable: false,
+    width: 800,
+    height: 600,
+    resizable: true,
+    maximizable: true,
     titleBarStyle: 'hiddenInset',
     transparent: true,
     webPreferences: {webSecurity: false},

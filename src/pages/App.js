@@ -60,7 +60,7 @@ class App extends Component {
             url={this.state.playUrl}
             controls
             width='100%'
-            height='315px'
+            height='calc(100vh - 35px)'
             playing={this.state.playing}
             config={{
               file: {
@@ -82,6 +82,7 @@ class App extends Component {
         className='left-menu bp3-dark'
         isOpen={this.state.menu}
         onClose={()=>{this.handleClose()}}
+        size={306}
       >
         <Navbar>
           <Navbar.Group align={Alignment.CENTER}>
@@ -141,7 +142,7 @@ class App extends Component {
     })
   }
 
-  handleOpen      = ()    => this.setState({ menu     : true, filterKey: '', playUrl  : null, playing: false })
+  handleOpen      = ()    => this.setState({ menu     : true, filterKey: '' })
   handleClose     = ()    => this.setState({ menu     : false })
   handlePlay      = (url) => {this.setState({ menu    : false, playUrl : url,  playing: true })}
   handleTabChange = (tab) => this.setState({ menuType : tab })
