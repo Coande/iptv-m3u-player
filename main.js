@@ -16,7 +16,6 @@ function createWindow () {
     resizable: true,
     maximizable: true,
     titleBarStyle: 'hiddenInset',
-    transparent: true,
     webPreferences: {webSecurity: false},
   })
 
