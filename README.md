@@ -1,15 +1,42 @@
-## Live TV
+**原 README：**
 
-#### 简介
----
-项目:[iptv-m3u-maker](https://github.com/EvilCult/iptv-m3u-maker)的衍生项目
+>## Live TV
+>
+>#### 简介
+>---
+>项目:[iptv-m3u-maker](https://github.com/EvilCult/iptv-m3u-maker)的衍生项目
+>
+>基于Electron + React 开发的**轻量级**桌面端播放器.
+>
+>频道数据会定期更新.
+>
+>目前仅打包了 Mac OS 的 App.
+>
+>以上
+>
+>视频演示: [YouTube](https://youtu.be/BhuYB4l3NUY)
 
-基于Electron + React 开发的**轻量级**桌面端播放器.
 
-频道数据会定期更新.
+**在原来基础上修改了：**
 
-目前仅打包了 Mac OS 的 App.
+- 宽高改为自适应
+- 弹出菜单时保持播放
+- 打包脚本调整
 
-以上
+**参加开发（摸索的）：**
 
-视频演示: [YouTube](https://youtu.be/BhuYB4l3NUY)
+启动前端：
+```
+npm run start
+```
+启动 Chrome 时添加参数，关闭跨域等安全策略：
+```
+--disable-web-security --user-data-dir
+```
+然后就可以在 Chrome 调试该项目了
+
+打包：
+```
+npm run package
+```
+打包后文件位于 dist 目录下
