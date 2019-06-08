@@ -142,7 +142,7 @@ class App extends Component {
     })
   }
 
-  handleOpen      = ()    => this.setState({ menu     : true, filterKey: '' })
+  handleOpen      = ()    => this.setState({ menu     : true, filterKey: '', playUrl  : null, playing: false })
   handleClose     = ()    => this.setState({ menu     : false })
   handlePlay      = (url) => {this.setState({ menu    : false, playUrl : url,  playing: true })}
   handleTabChange = (tab) => this.setState({ menuType : tab })
