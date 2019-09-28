@@ -23,6 +23,9 @@ function createWindow () {
     mainWindow.show()
   })
 
+  // 允许自动播放
+  app.commandLine.appendSwitch('autoplay-policy', 'no-user-gesture-required');
+
   // and load the index.html of the app.
   // /work/git/square/web
   // mainWindow.loadURL('http://localhost:8888/');
