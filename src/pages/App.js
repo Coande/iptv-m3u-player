@@ -41,6 +41,23 @@ class App extends Component {
       this.setState({
         playUrl: resData.cctv[0].url,
         dataLit: resData
+      }, () => {
+
+        // 加入广东公共的源
+        const gdtvPublic = 'http://live.grtn.cn/drm.php?url=http%3A%2F%2Fstream1%2Egrtn%2Ecn%2Fggpd%2Fsd%2Flive%2Em3u8'
+        fetch(gdtvPublic)
+          .then(res => {
+            return res.text();
+          })
+          .then(resData2 => {
+            this.state.dataLit.local.unshift({
+              "title": "广东公共",
+              "url": resData2
+            });
+            this.setState({
+              dataLit: this.state.dataLit
+            })
+          });
       })
     })
   }
