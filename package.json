@@ -17,7 +17,7 @@
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "estart": "electron .",
-    "package": "react-app-rewired build && rimraf ./dist/ && electron-packager . LiveTV --out ./dist/ --electron-version=3.0.4 --ignore=\"(node_modules|dist)\""
+    "package": "react-app-rewired build && rimraf ./dist/ && electron-packager . LiveTV --out ./dist/ --arch=all --icon=\"./public/tv.ico\" --electron-version=3.0.4 --ignore=\"(node_modules|dist)\""
   },
   "eslintConfig": {
     "extends": "react-app"
