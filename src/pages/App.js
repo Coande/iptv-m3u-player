@@ -26,19 +26,22 @@ class App extends Component {
       filter: '',
       menu:false,
       menuType: 'cctv',
-      playUrl: null,
-      playing: false,
+      playUrl: "",
+      playing: true,
       dataLit: {},
       filterKey: ''
     }
   }
 
   componentDidMount () {
-    const api = 'https://raw.githubusercontent.com/EvilCult/iptv-m3u-maker/master/tv.json'
+    const api = 'https://raw.githubusercontent.com/Coande/iptv-m3u-maker/master/tv.json'
     fetch(api)
     .then(res => res.json())
     .then(resData => {
-      this.setState({dataLit: resData})
+      this.setState({
+        playUrl: resData.cctv[0].url,
+        dataLit: resData
+      })
     })
   }
 
@@ -142,9 +145,20 @@ class App extends Component {
     })
   }
 
-  handleOpen      = ()    => this.setState({ menu     : true, filterKey: '', playUrl  : null, playing: false })
+  handleOpen      = ()    => this.setState({ menu     : true, filterKey: '' })
   handleClose     = ()    => this.setState({ menu     : false })
-  handlePlay      = (url) => {this.setState({ menu    : false, playUrl : url,  playing: true })}
+  handlePlay      = (url) => {
+    this.setState({
+      menu: false, 
+      playUrl: null,
+      playing: false
+    }, () => {
+      this.setState({
+        playUrl: url,
+        playing: true
+      });
+    });
+  }
   handleTabChange = (tab) => this.setState({ menuType : tab })
   handleFilter    = (e)   => this.setState({ filterKey: e.target.value })
 }
