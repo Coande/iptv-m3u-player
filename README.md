@@ -23,20 +23,16 @@
 - 宽高改为自适应
 - 打开时自动播放
 - 弹出菜单时保持播放
-- 节目源更改（改为深圳移动测试的节目源）
+- 节目源更改，改为 https://github.com/Coande/iptv-m3u-maker
 - 还有其它一些小改动
 
 
 **下载：**
 
-[LiveTV-win32-ia32.zip](https://github.com/Coande/iptv-m3u-player/releases/download/v1.0.2/LiveTV-win32-ia32.zip)
-
-[LiveTV-win32-x64.zip](https://github.com/Coande/iptv-m3u-player/releases/download/v1.0.2/LiveTV-win32-x64.zip)
-
-[LiveTV-darwin-x64.zip](https://github.com/Coande/iptv-m3u-player/releases/download/v1.0.2/LiveTV-darwin-x64.zip)
+[进入下载页](https://github.com/Coande/iptv-m3u-player/releases/)
 
 
-**参加开发（摸索的）：**
+**参加开发：**
 
 启动前端：
 ```
